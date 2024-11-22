@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RestoreSources>https://api.nuget.org/v3/index.json;$(MSBuildThisFileDirectory)..\bin</RestoreSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ProjectCodeFixer" Version="42.*" />
+  </ItemGroup>
+
+</Project>

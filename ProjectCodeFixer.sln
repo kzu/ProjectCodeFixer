@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35507.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Analyzers", "Analyzers\Analyzers.csproj", "{E5682B3F-8428-40A7-8371-BC2665064FB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fixers", "Fixers\Fixers.csproj", "{C635947D-CDD0-413B-81E3-92F105CA8A79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{528A412A-51DF-4FB5-A17A-DFA79EF64D21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5682B3F-8428-40A7-8371-BC2665064FB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5682B3F-8428-40A7-8371-BC2665064FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5682B3F-8428-40A7-8371-BC2665064FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5682B3F-8428-40A7-8371-BC2665064FB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C635947D-CDD0-413B-81E3-92F105CA8A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C635947D-CDD0-413B-81E3-92F105CA8A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C635947D-CDD0-413B-81E3-92F105CA8A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C635947D-CDD0-413B-81E3-92F105CA8A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{528A412A-51DF-4FB5-A17A-DFA79EF64D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528A412A-51DF-4FB5-A17A-DFA79EF64D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528A412A-51DF-4FB5-A17A-DFA79EF64D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528A412A-51DF-4FB5-A17A-DFA79EF64D21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2546A650-BC18-4EB9-BD72-CEB02445C007}
+	EndGlobalSection
+EndGlobal
