@@ -2,7 +2,7 @@
 
 namespace Sample;
 
-public class Foo
+public class Class1
 {
 
 }
