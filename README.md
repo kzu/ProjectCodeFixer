@@ -21,6 +21,9 @@ System.InvalidOperationException : Code fix is attempting to provide a fix for a
 Which doesn't make much sense since a code fixer can fix any artifacts in a project 
 including additional files, AFAIK.
 
+> NOTE: the code fixer PROJECT is propertly set up and hooked-up, as shown by 
+> another dummy analyzer/fixer pair that adds a "1" suffix to types without it.
+
 ## Expected behavior
 
 The fixer shows up and can add an MSBuild project property to the project file.

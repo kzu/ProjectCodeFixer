@@ -13,7 +13,6 @@ public class Analyzer : DiagnosticAnalyzer
         "Some arbitrary property must be set",
         "Some arbitrary property is required in project.",
         "Build",
-        // Make it a warning since the others already are errors
         DiagnosticSeverity.Error,
         isEnabledByDefault: true);
 
@@ -22,7 +21,6 @@ public class Analyzer : DiagnosticAnalyzer
         "Project file must be provided to analyzer",
         "Project file must be provided to analyzer",
         "Build",
-        // Make it a warning since the others already are errors
         DiagnosticSeverity.Error,
         isEnabledByDefault: true);
 
