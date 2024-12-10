@@ -13,6 +13,7 @@ public class FixerTests
     {
         var test = new CSharpCodeFixTest<Analyzer, Fixer, DefaultVerifier>
         {
+            CodeFixTestBehaviors = CodeFixTestBehaviors.SkipLocalDiagnosticCheck,
             SolutionTransforms =
             {
                 (solution, projectId) =>
@@ -23,24 +24,33 @@ public class FixerTests
                 },
             },
             TestCode =
-            """
-            public class {|#0:User|} { }
-            """,
+                """
+                public class {|#0:User|} { }
+                """,
             FixedCode =
-            """
-            public class User { }
-            """,
+                """
+                public class User { }
+                """,
         };
 
         test.TestState.AdditionalFiles.Add(("Test.csproj",
             """"
             <Project>
-                <PropertyGroup>
-                </PropertyGroup>
-            </Project>            
+              <PropertyGroup>
+              </PropertyGroup>
+            </Project>
             """"));
 
         test.ExpectedDiagnostics.Add(new DiagnosticResult(Analyzer.MustHaveProjectProperty).WithLocation(0));
+
+        test.FixedState.AdditionalFiles.Add(("Test.csproj",
+            """"
+            <Project>
+              <PropertyGroup>
+                <Foo>Bar</Foo>
+              </PropertyGroup>
+            </Project>
+            """"));
 
         await test.RunAsync();
     }

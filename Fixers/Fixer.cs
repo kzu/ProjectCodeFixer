@@ -27,7 +27,7 @@ public class Fixer : CodeFixProvider
             c => CreateChangedSolutionAsync(context, c),
             nameof(Fixer)), context.Diagnostics);
 
-        File.AppendAllLines(Environment.ExpandEnvironmentVariables("%TEMP%\\ProjectCodeFixer.log"), ["RegisterCodeFixesAsync"]);
+        //File.AppendAllLines(Environment.ExpandEnvironmentVariables("%TEMP%\\ProjectCodeFixer.log"), ["RegisterCodeFixesAsync"]);
 
         return Task.CompletedTask;
     }
@@ -59,7 +59,7 @@ public class Fixer : CodeFixProvider
             .GetProject(context.Document.Project.Id)
             .GetDocument(context.Document.Id);
 
-        File.AppendAllLines(Environment.ExpandEnvironmentVariables("%TEMP%\\ProjectCodeFixer.log"), ["Returned new XML with Foo=Bar property"]);
+        //File.AppendAllLines(Environment.ExpandEnvironmentVariables("%TEMP%\\ProjectCodeFixer.log"), ["Returned new XML with Foo=Bar property"]);
 
         return newDoc.Project.Solution;
     }
